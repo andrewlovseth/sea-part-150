@@ -1,0 +1,61 @@
+.list {
+    padding: 3rem 0;
+}
+
+.faq {
+    @include desktop-small {
+        grid-column: 2 / span 10;
+    }
+
+    & + .faq {
+        margin-top: 2rem;
+    }
+
+    &__question {
+        cursor: pointer;
+        background: $dark-blue-50;
+        border: 1px solid $dark-blue-200;
+        padding: 1rem;
+        border-radius: 0.25rem;
+        transition: all 200ms ease;
+
+        h3 {
+            margin: 0;
+            padding: 0;
+            font-family: $open-sans;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+
+            span {
+                display: block;
+                flex: 1;
+            }
+
+            svg {
+                width: 0.75rem;
+                transition: all 200ms ease;
+            }
+        }
+
+        &:hover {
+            background: $dark-blue-100;
+        }
+
+        &.active {
+            background: $mid-blue-200;
+            border: 1px solid $mid-blue-400;
+
+            svg {
+                rotate: 180deg;
+            }
+        }
+    }
+
+    &__answer {
+        display: none;
+        padding: 1rem;
+    }
+}
