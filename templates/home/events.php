@@ -21,11 +21,11 @@ if(have_rows('events')): while(have_rows('events')): the_row(); ?>
             <?php if(have_rows('list')): $count = 1; while(have_rows('list')): the_row(); ?>
 
                 <div class="event event-<?php echo $count; ?>">
-                    <div class="date copy p3 sans-serif">
+                    <div class="date copy p2 sans-serif">
                         <?php echo get_sub_field('date'); ?>
                     </div>
 
-                    <div class="description copy p3 sans-serif">
+                    <div class="description copy p2 sans-serif">
                         <?php echo get_sub_field('description'); ?>
                     </div>                
                 </div>

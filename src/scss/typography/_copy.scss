@@ -35,7 +35,12 @@
     }
 }
 
-.copy ul li + li,
-.copy ol li + li {
-    padding-top: 0.5rem;
+.copy {
+    ul,
+    ol {
+        padding-top: 2rem;
+    }
+    li + li {
+        padding-top: 0.5rem;
+    }
 }

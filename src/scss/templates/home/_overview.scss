@@ -19,5 +19,12 @@
         &-wrapper {
             @include cover-fill-image;
         }
+
+        .caption {
+            p {
+                text-align: right;
+                color: $gray-500;
+            }
+        }
     }
 }

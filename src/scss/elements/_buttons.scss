@@ -1,8 +1,8 @@
 .cta {
     .btn {
-        background: $orange;
+        background: $mid-blue;
         color: $white;
-        border-color: $orange;
+        border-color: $mid-blue;
         border-radius: 3px;
         text-transform: uppercase;
         font-size: 0.75rem;
@@ -12,17 +12,17 @@
 
         &:hover {
             background: transparent;
-            color: $orange;
+            color: $mid-blue;
         }
 
         &.invert {
             background: transparent;
-            color: $orange;
+            color: $mid-blue;
 
             &:hover {
-                background: $orange;
+                background: $mid-blue;
                 color: $white;
-                border-color: $orange;
+                border-color: $mid-blue;
             }
         }
     }
@@ -31,6 +31,6 @@
         font-weight: bold;
         font-size: clamp(0.875rem, 1vw, 1rem);
         font-style: italic;
-        color: $orange;
+        color: $mid-blue;
     }
 }
