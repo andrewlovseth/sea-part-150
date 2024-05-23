@@ -22,7 +22,7 @@
                     </div>
 
                     <div class="copy p2">
-                        <?php the_sub_field('deck'); ?>
+                        <?php echo get_sub_field('deck'); ?>
                     </div>
                     
                 </div>

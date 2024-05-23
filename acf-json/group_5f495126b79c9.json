@@ -1,11 +1,12 @@
 {
     "key": "group_5f495126b79c9",
-    "title": "Template: Meldrum Bar Park",
+    "title": "Template: SEA Part 150 Home",
     "fields": [
         {
             "key": "field_5f495138b8fbe",
             "label": "Hero",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -22,6 +23,7 @@
             "key": "field_5f49513fb8fbf",
             "label": "Hero Image",
             "name": "hero_image",
+            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -46,6 +48,7 @@
             "key": "field_5f4959bc648ae",
             "label": "About Site",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -62,6 +65,7 @@
             "key": "field_624dbeabdb461",
             "label": "Banner",
             "name": "banner",
+            "aria-label": "",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -77,6 +81,7 @@
                     "key": "field_624dbeb0db462",
                     "label": "Show",
                     "name": "show",
+                    "aria-label": "",
                     "type": "true_false",
                     "instructions": "",
                     "required": 0,
@@ -96,6 +101,7 @@
                     "key": "field_624dbed9db465",
                     "label": "Headline",
                     "name": "headline",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -115,6 +121,7 @@
                     "key": "field_624dbeb6db463",
                     "label": "CTAs",
                     "name": "ctas",
+                    "aria-label": "",
                     "type": "repeater",
                     "instructions": "",
                     "required": 0,
@@ -129,11 +136,13 @@
                     "max": 0,
                     "layout": "table",
                     "button_label": "+ Add CTA",
+                    "rows_per_page": 20,
                     "sub_fields": [
                         {
                             "key": "field_624dbeccdb464",
                             "label": "Link",
                             "name": "link",
+                            "aria-label": "",
                             "type": "link",
                             "instructions": "",
                             "required": 0,
@@ -143,7 +152,8 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array"
+                            "return_format": "array",
+                            "parent_repeater": "field_624dbeb6db463"
                         }
                     ]
                 }
@@ -153,6 +163,7 @@
             "key": "field_5f4959c6648af",
             "label": "About Site Headline",
             "name": "about_site_headline",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -172,6 +183,7 @@
             "key": "field_5f4959cd648b0",
             "label": "About Site Copy",
             "name": "about_site_copy",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -191,6 +203,7 @@
             "key": "field_5f495a3ba8ada",
             "label": "The Park",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -207,6 +220,7 @@
             "key": "field_6180751844476",
             "label": "The Park",
             "name": "the_park",
+            "aria-label": "",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -222,6 +236,7 @@
                     "key": "field_6180751e44477",
                     "label": "Headline",
                     "name": "headline",
+                    "aria-label": "",
                     "type": "textarea",
                     "instructions": "",
                     "required": 0,
@@ -241,6 +256,7 @@
                     "key": "field_6180753044478",
                     "label": "Copy",
                     "name": "copy",
+                    "aria-label": "",
                     "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
@@ -260,6 +276,7 @@
                     "key": "field_6180753744479",
                     "label": "Photo",
                     "name": "photo",
+                    "aria-label": "",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -286,6 +303,7 @@
             "key": "field_6180768c6282f",
             "label": "Process",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -302,6 +320,7 @@
             "key": "field_6180769362830",
             "label": "Process",
             "name": "process",
+            "aria-label": "",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -317,6 +336,7 @@
                     "key": "field_61d4c19d90d0c",
                     "label": "Show",
                     "name": "show",
+                    "aria-label": "",
                     "type": "true_false",
                     "instructions": "",
                     "required": 0,
@@ -336,6 +356,7 @@
                     "key": "field_6180769362831",
                     "label": "Headline",
                     "name": "headline",
+                    "aria-label": "",
                     "type": "textarea",
                     "instructions": "",
                     "required": 0,
@@ -355,6 +376,7 @@
                     "key": "field_6180769362832",
                     "label": "Copy",
                     "name": "copy",
+                    "aria-label": "",
                     "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
@@ -374,6 +396,7 @@
                     "key": "field_6180769362833",
                     "label": "Photo",
                     "name": "photo",
+                    "aria-label": "",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -398,6 +421,7 @@
                     "key": "field_6180831264d21",
                     "label": "Steps Headline",
                     "name": "steps_headline",
+                    "aria-label": "",
                     "type": "textarea",
                     "instructions": "",
                     "required": 0,
@@ -417,6 +441,7 @@
                     "key": "field_6180831c64d22",
                     "label": "Steps",
                     "name": "steps",
+                    "aria-label": "",
                     "type": "repeater",
                     "instructions": "",
                     "required": 0,
@@ -431,11 +456,13 @@
                     "max": 0,
                     "layout": "table",
                     "button_label": "+ Add Step",
+                    "rows_per_page": 20,
                     "sub_fields": [
                         {
                             "key": "field_6180832b64d23",
                             "label": "Deck",
                             "name": "deck",
+                            "aria-label": "",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -449,7 +476,8 @@
                             "tabs": "all",
                             "toolbar": "full",
                             "media_upload": 0,
-                            "delay": 0
+                            "delay": 0,
+                            "parent_repeater": "field_6180831c64d22"
                         }
                     ]
                 }
@@ -459,6 +487,7 @@
             "key": "field_61831fd7fd1a0",
             "label": "Feedback",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -475,6 +504,7 @@
             "key": "field_61831f8c5f87e",
             "label": "Timeline",
             "name": "timeline",
+            "aria-label": "",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -490,6 +520,7 @@
                     "key": "field_61831fa25f87f",
                     "label": "Headline",
                     "name": "headline",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -509,6 +540,7 @@
                     "key": "field_61831fa75f880",
                     "label": "Copy",
                     "name": "copy",
+                    "aria-label": "",
                     "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
@@ -528,6 +560,7 @@
                     "key": "field_61831fad5f881",
                     "label": "Events",
                     "name": "events",
+                    "aria-label": "",
                     "type": "repeater",
                     "instructions": "",
                     "required": 0,
@@ -542,11 +575,13 @@
                     "max": 0,
                     "layout": "table",
                     "button_label": "+ Add Event",
+                    "rows_per_page": 20,
                     "sub_fields": [
                         {
                             "key": "field_61831fc05f883",
                             "label": "Date",
                             "name": "date",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -560,12 +595,14 @@
                             "placeholder": "",
                             "prepend": "",
                             "append": "",
-                            "maxlength": ""
+                            "maxlength": "",
+                            "parent_repeater": "field_61831fad5f881"
                         },
                         {
                             "key": "field_61831fb65f882",
                             "label": "Description",
                             "name": "description",
+                            "aria-label": "",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -579,7 +616,8 @@
                             "tabs": "all",
                             "toolbar": "full",
                             "media_upload": 0,
-                            "delay": 0
+                            "delay": 0,
+                            "parent_repeater": "field_61831fad5f881"
                         }
                     ]
                 }
@@ -617,5 +655,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649262309
+    "modified": 1716478096
 }

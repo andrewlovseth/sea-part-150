@@ -34,11 +34,11 @@
 
                 <div class="info">
                     <div class="headline orange underline">
-                        <h4><?php the_sub_field('headline'); ?></h4>
+                        <h4><?php echo get_sub_field('headline'); ?></h4>
                     </div>
 
                     <div class="copy p2">
-                        <?php the_sub_field('copy'); ?>
+                        <?php echo get_sub_field('copy'); ?>
                     </div>
                 </div>
             </div>

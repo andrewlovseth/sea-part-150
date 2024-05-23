@@ -37,10 +37,10 @@
 	<?php endif; ?>
 
 	<div class="headline teal underline">
-		<h4><?php the_field('about_site_headline'); ?></h4>
+		<h4><?php echo get_field('about_site_headline'); ?></h4>
 	</div>
 
 	<div class="copy p1">
-		<?php the_field('about_site_copy'); ?>
+		<?php echo get_field('about_site_copy'); ?>
 	</div>
 </section>

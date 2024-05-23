@@ -6,7 +6,7 @@
 	</div>
 
 	<div class="project-info">
-		<h1><?php the_field('project_name', 'options'); ?></h1>
-		<h2><?php the_field('project_type', 'options'); ?></h2>
+		<h1><?php echo get_field('project_name', 'options'); ?></h1>
+		<h2><?php echo get_field('project_type', 'options'); ?></h2>
 	</div>
 </div>

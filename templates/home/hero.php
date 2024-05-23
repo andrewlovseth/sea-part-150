@@ -7,8 +7,8 @@
 	<div class="project-info">
 
 		<div class="headline">
-			<h2><?php the_field('project_name', 'options'); ?></h2>
-			<h1><?php the_field('project_type', 'options'); ?></h1>
+			<h2><?php echo get_field('project_name', 'options'); ?></h2>
+			<h1><?php echo get_field('project_type', 'options'); ?></h1>
 		</div>
 		
 	</div>

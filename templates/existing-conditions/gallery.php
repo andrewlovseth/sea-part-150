@@ -3,7 +3,7 @@
     <section class="gallery">
         <div class="grid">
             <div class="headline teal centered underline">
-                <h3><?php the_field('gallery_headline'); ?></h3>
+                <h3><?php echo get_field('gallery_headline'); ?></h3>
             </div>
         </div>
 

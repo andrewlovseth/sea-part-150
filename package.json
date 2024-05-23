@@ -13,7 +13,7 @@
         "minify-js": "uglifyjs public/js/*.js -m -o public/js/",
         "watch:js": "onchange 'src/js/' -- npm run build:js",
         "build:js": "npm run js && npm run minify-js",
-        "serve": "browser-sync start --proxy 'seapart150.local' --files 'public/css/*.css, public/js/*.js, public/*.html'",
+        "serve": "browser-sync start --proxy 'seapart150.local' --files 'public/css/*.css, public/js/*.js, **/*.php'",
         "watch": "npm-run-all --parallel watch:scss watch:js serve"
     },
     "devDependencies": {

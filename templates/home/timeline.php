@@ -22,11 +22,11 @@ if(have_rows('timeline')): while(have_rows('timeline')): the_row(); ?>
 
                 <div class="event event-<?php echo $count; ?>">
                     <div class="date copy p3 sans-serif">
-                        <?php the_sub_field('date'); ?>
+                        <?php echo get_sub_field('date'); ?>
                     </div>
 
                     <div class="description copy p3 sans-serif">
-                        <?php the_sub_field('description'); ?>
+                        <?php echo get_sub_field('description'); ?>
                     </div>                
                 </div>
 
