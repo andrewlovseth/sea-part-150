@@ -14,6 +14,10 @@ body {
     border-color: $dark-blue;
     border-width: 2rem;
     background: $white;
+
+    &-content {
+        min-height: 70vh;
+    }
 }
 
 .copy {
