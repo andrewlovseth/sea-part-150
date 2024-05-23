@@ -1,0 +1,78 @@
+.timeline {
+    padding-bottom: 3rem;
+
+    .main-copy {
+        padding-bottom: 3rem;
+        @include desktop-small {
+            grid-column: 2 / span 8;
+        }
+    }
+
+    &__line {
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6rem 4rem;
+        max-width: 800px;
+        position: relative;
+        padding: 2rem 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 4px;
+            height: 100%;
+            background: $mid-blue-200;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__item {
+        background: $white;
+        border: 1px solid $gray-200;
+        border-radius: 0.25rem;
+        padding: 1.5rem 2rem;
+        box-shadow: 0 2px 8px rgba($black, 0.1);
+        position: static;
+
+        &::before {
+            display: block;
+            content: "";
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 50%;
+            background: $mid-blue;
+            position: absolute;
+            right: calc(50% - 0.6125rem);
+            top: calc(50% - 0.6125rem);
+        }
+
+        &-wrapper {
+            grid-column: span 2;
+            display: grid;
+            grid-template-columns: subgrid;
+
+            &:nth-of-type(even) {
+                .timeline__item {
+                    grid-column: 2;
+                }
+            }
+        }
+
+        h3 {
+            font-weight: bold;
+            font-size: 1rem;
+            line-height: 1.25em;
+            padding-bottom: 0.25rem;
+        }
+
+        p {
+            color: $gray-600;
+            line-height: 1.25em;
+        }
+    }
+}

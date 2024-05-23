@@ -12,8 +12,6 @@ get_header(); ?>
 
     <?php get_template_part('templates/home/overview'); ?>
 
-
-    <?php get_template_part('templates/home/events'); ?>
-
+    <?php get_template_part('templates/schedule/events'); ?>
 
 <?php get_footer(); ?>

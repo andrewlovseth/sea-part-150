@@ -1,6 +1,6 @@
 {
     "key": "group_664f85e305f45",
-    "title": "Template: Liks",
+    "title": "Template: Links",
     "fields": [
         {
             "key": "field_664f85e308c7a",
@@ -172,5 +172,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1716487730
+    "modified": 1716489681
 }
