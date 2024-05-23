@@ -1,0 +1,14 @@
+section.next {
+    background: $off-white;
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+    text-align: center;
+
+    .copy {
+        padding: 1rem 0 1rem 0;
+        @include desktop-small {
+            grid-column: 4 / span 8;
+        }
+
+    }
+}

@@ -1,0 +1,91 @@
+.site-footer {
+    background: $dark-blue;
+    align-items: start;
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+
+    .site-info {
+        align-items: start;
+
+        .logo {
+            grid-column: 1 / span 4;
+
+            @include tablet {
+                grid-column: 1 / span 1;
+            }
+
+            @include desktop-small {
+                grid-column: 1 / span 2;
+            }
+
+            a {
+                display: block;
+                max-width: 8rem;
+            }
+
+            img {
+                filter: brightness(3);
+            }
+        }
+
+        .project-info {
+            grid-column: 1 / span 4;
+            padding-top: 1rem;
+
+            @include tablet {
+                grid-column: 2 / span 3;
+                padding-top: 0;
+            }
+            @include desktop-small {
+                grid-column: 3 / span 6;
+            }
+        }
+    }
+
+    .footer-nav {
+        h5 {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 0.875rem;
+            letter-spacing: 0.1em;
+        }
+
+        .links {
+            column-gap: 2rem;
+            columns: unset;
+
+            .link {
+                a {
+                    font-size: clamp(1rem, 1.2vw, 1.125rem);
+                    line-height: 1.5em;
+                }
+            }
+        }
+    }
+
+    .utilties {
+        margin-top: $section-padding;
+        border-top: 2px solid $white;
+        padding-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        @include tablet {
+            justify-content: space-between;
+        }
+    }
+    .copyright {
+        margin: 0;
+        padding: 0;
+        border-top: none;
+    }
+
+    .credits {
+        justify-content: flex-start;
+
+        @include tablet {
+            justify-content: flex-end;
+        }
+    }
+}

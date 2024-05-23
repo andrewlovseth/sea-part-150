@@ -1,0 +1,16 @@
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+    font-family: $open-sans;
+}
+
+a {
+    color: $dark-blue;
+}
+
+@import "headings";
+
+@import "copy";

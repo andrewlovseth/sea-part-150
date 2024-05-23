@@ -1,0 +1,30 @@
+{
+    "name": "sea-part-150",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "scss": "node-sass src/scss/ -o public/css/ --source-map true",
+        "postcss": "postcss public/css/*.css --use autoprefixer -d public/css/",
+        "watch:scss": "onchange 'src/scss/**/*.scss' -- npm run build:css",
+        "build:css": "npm run scss && npm run postcss",
+        "js": "babel src/js --out-dir public/js --source-maps",
+        "minify-js": "uglifyjs public/js/*.js -m -o public/js/",
+        "watch:js": "onchange 'src/js/' -- npm run build:js",
+        "build:js": "npm run js && npm run minify-js",
+        "serve": "browser-sync start --proxy 'seapart150.local' --files 'public/css/*.css, public/js/*.js, public/*.html'",
+        "watch": "npm-run-all --parallel watch:scss watch:js serve"
+    },
+    "devDependencies": {
+        "node-sass": "^6.0.0",
+        "postcss-cli": "^8.3.1",
+        "autoprefixer": "^10.0.0",
+        "browser-sync": "^2.26.14",
+        "npm-run-all": "^4.1.5",
+        "onchange": "^7.1.0"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

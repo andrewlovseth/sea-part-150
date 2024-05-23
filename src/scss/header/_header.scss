@@ -1,0 +1,146 @@
+.site-header {
+    padding: 2rem 0;
+    background: $white;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    align-items: center;
+
+    .site-logo {
+        grid-column: 2 / span 3;
+        @include desktop-small {
+            grid-column: 2 / span 4;
+        }
+        a {
+            display: block;
+            max-width: 10rem;
+        }
+    }
+
+    .hamburger {
+        grid-column: 5 / span 1;
+
+        @include tablet-small {
+            grid-column: 9 / span 1;
+        }
+        .buns {
+            .patty,
+            .patty:before,
+            .patty:after {
+                background: $mid-blue;
+            }
+        }
+    }
+
+    .site-nav {
+        @include desktop-small {
+            grid-column: 6 / span 8;
+            padding-top: 0 !important;
+        }
+
+        .main-nav {
+            @include desktop-small {
+                justify-content: flex-end;
+                width: auto;
+                flex: 1;
+
+                .nav-item {
+                    display: flex;
+                    align-items: center;
+                    padding: 1rem 0;
+
+                    & + .nav-item {
+                        &:before {
+                            content: "·";
+                            display: block;
+                            color: $green;
+                            font-size: 1.5rem;
+                            font-weight: normal;
+                            line-height: 1em;
+                            margin-bottom: calc(0.25rem + 2px);
+                            margin-left: 1rem;
+                            margin-right: 1rem;
+
+                            @include desktop-medium {
+                                margin-left: 1.375rem;
+                                margin-right: 1.375rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .top-level-link {
+            font-size: clamp(1.25rem, 1.7vw, 1.5rem);
+            font-weight: 600;
+            padding-bottom: 0.25rem;
+            border-bottom: 2px solid transparent;
+
+            @include desktop-small {
+                font-size: 0.8215rem;
+                white-space: nowrap;
+            }
+
+            @media screen and (min-width: 1190px) {
+                font-size: 0.9375rem;
+            }
+
+            &:hover {
+                border-bottom: 2px solid $green;
+                text-decoration: none;
+            }
+        }
+
+        .dropdown {
+            .top-level-link {
+                &:hover {
+                    text-decoration: none;
+                    border-bottom: 2px solid $green;
+                }
+
+                &:after {
+                    background-image: url(images/icon-dropdown-arrow.svg);
+                }
+            }
+        }
+
+        .sub-nav {
+            border-radius: 3px;
+            box-shadow: 0 0 8px rgba(10, 34, 69, 0.1);
+
+            .sub-link {
+                a {
+                    font-size: 0.875rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.page-header {
+    padding: 3rem 0 3rem 0;
+
+    h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: -0.05em;
+        color: $dark-blue;
+        padding-bottom: 1rem;
+    }
+
+    h2 {
+        font-weight: bold;
+        color: $mid-blue;
+        font-size: 0.875rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid $mid-blue;
+    }
+}
+
+body.home .nav-item.home > a,
+body.page-template-existing-conditions .nav-item.existing-conditions > a,
+body.page-template-opportunities-constraints .nav-item.opportunities-constraints > a,
+body.page-template-site-plan-development-concepts .nav-item.site-plan-development-concepts > a,
+body.page-template-survey .nav-item.survey > a {
+    border-bottom: 2px solid $green;
+}

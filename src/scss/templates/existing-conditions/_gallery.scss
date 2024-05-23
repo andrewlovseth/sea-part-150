@@ -1,0 +1,69 @@
+section.gallery {
+    padding-bottom: 3rem;
+
+    @include tablet {
+        padding-bottom: 6rem;
+    }
+
+    .headline {
+        padding-bottom: 2rem;
+    }
+
+    .photos {
+        grid-column: 1 / -1;
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    .photo {
+        width: 60vw;
+        margin: 0 0.5rem;
+        transition: all 0.3s ease;
+        filter: saturate(0.5);
+        opacity: 0.75;
+
+        @include tablet {
+            width: 40vw;
+        }
+
+        img {
+            transform: scale(0.9);
+            transition: all 0.3s ease;
+        }
+
+        .caption {
+            padding: 0.5rem 0;
+            opacity: 0;
+            transition: all 0.3s ease;
+            line-height: 1.125em;
+
+            @include tablet {
+                padding: 1rem 0;
+            }
+        }
+
+        &:focus,
+        &:active {
+            outline: none;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            cursor: ew-resize;
+        }
+
+        &.slick-center {
+            filter: saturate(1);
+            opacity: 1;
+
+            img {
+                transform: scale(1);
+            }
+
+            .caption {
+                opacity: 1;
+            }
+        }
+    }
+}

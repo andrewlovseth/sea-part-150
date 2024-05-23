@@ -1,0 +1,36 @@
+section.process {
+    background: $off-white;
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+    align-items: start;
+
+    .info {
+        @include tablet {
+            grid-row: 1;
+            grid-column: 6 / span 4;
+        }
+
+        @include desktop-small {
+            grid-row: 1;
+            grid-column: 10 / span 4;
+        }
+    }
+
+    .photo {
+        margin-top: 3rem;
+
+        @include tablet {
+            margin-top: 0;
+            grid-row: 1;
+            grid-column: 2 / span 4;
+        }
+
+        @include desktop-small {
+            grid-column: 2 / span 7;
+        }
+
+        &-wrapper {
+            @include cover-fill-image;
+        }
+    }
+}

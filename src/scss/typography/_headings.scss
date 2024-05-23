@@ -1,0 +1,62 @@
+.headline {
+	padding-bottom: 1rem;
+
+    &.orange {
+        color: $orange;
+    }
+
+    &.teal {
+        color: $teal;
+    }
+
+    &.centered {
+        text-align: center;
+    }
+
+    &.underline {
+        &:after {
+            display: block;
+            content: "";
+            width: 1.5rem;
+            height: 0.25rem;
+            margin-top: 1rem;
+        }
+
+        &.centered:after {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &.orange:after {
+            background: $orange;
+        }
+
+        &.teal:after {
+            background: $teal;
+        }
+    }
+
+	h1 {
+		font-size: clamp(1.75rem, 4vw, 2.25rem);
+		line-height: 1.25em;
+		font-weight: bold;
+	}
+
+	h2 {
+		font-size: clamp(1.5rem, 3vw, 1.75rem);
+		line-height: 1.25em;
+		font-weight: bold;
+	}
+
+	h3 {
+		font-size: clamp(1.25rem, 2vw, 1.5rem);
+		line-height: 1.25em;
+        font-weight: bold;
+	}
+
+	h4 {
+		font-size: clamp(1.125rem, 1.5vw, 1.25rem);
+		line-height: 1.25em;
+        font-weight: bold;
+	}    
+}

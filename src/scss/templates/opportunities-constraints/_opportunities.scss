@@ -1,0 +1,107 @@
+section.opportunities {
+    .intro {
+        padding-top: 3rem;
+        padding-bottom: 6rem;
+        display: grid;
+        gap: 2rem;
+
+        @include tablet {
+            grid-template-columns: 1.25fr 1fr;
+
+            .info {
+                padding-right: 2rem;
+            }
+        }
+
+        .photo {
+            &-wrapper {
+                @include cover-fill-image;
+            }
+        }
+    }
+
+    .map {
+        grid-column: 1 / -1;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    .caption {
+        padding-top: 1rem;
+
+        a {
+            font-weight: bold;
+            font-size: clamp(1rem, 1.1vw, 1.125rem);
+        }
+    }
+
+    /*
+    .detail {
+        display: grid;
+        gap: 2rem;
+        align-items: end;
+
+        @include tablet {
+            grid-template-columns: 1.5fr 1fr;
+        }
+
+        & + .detail {
+            margin-top: $section-padding;
+        }
+
+
+        &:nth-of-type(even) {
+            @include tablet {
+                grid-template-columns: 1fr 1.5fr;
+
+                .info {
+                    grid-row: 1;
+                    grid-column: 1;
+                }
+
+                .map {
+                    grid-row: 1;
+                    grid-column: 2;
+                }
+            }
+        }
+
+        .item {
+            display: grid;
+            grid-template-columns: 2rem 1fr;
+            align-items: start;
+
+            & + .item {
+                margin-top: 1.5rem;
+            }
+
+
+            .label {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 50%;
+                background: $teal;
+
+                span {
+                    padding-top: 1px;
+                    display: block;
+                    color: $white;
+                    font-size: 0.8125rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    */
+
+    .divider {
+        width: 100%;
+        height: 1px;
+        background: $teal;
+        margin-top: $section-padding;
+        margin-bottom: $section-padding;
+    }
+}

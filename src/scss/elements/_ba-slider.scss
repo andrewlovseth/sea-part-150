@@ -1,0 +1,32 @@
+.ba-slider {
+	.handle {
+		&:after {
+			background: $light-blue;
+			box-shadow: none;
+			border: none;
+			content: '\2194';
+			line-height: 60px;
+		}
+	}
+
+	&.draggable {
+		&:after {
+			line-height: 46px;
+		}
+	}
+
+	.caption {
+		background: rgba(255, 255, 255, 0.7);
+		color: $blue;
+		padding: 15px;
+		font-size: 1rem;
+		line-height: 1.25em;
+		text-align: left;
+		font-style: italic;
+
+		@include desktop-small {
+			font-size: 1rem;
+		}
+
+	}
+}

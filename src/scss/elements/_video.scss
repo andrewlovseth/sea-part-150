@@ -1,0 +1,26 @@
+.video {
+    a {
+        display: block;
+        position: relative;
+
+        &:after {
+            display: block;
+            content: '';
+            background: url(images/video-play-btn.svg) no-repeat 0 0;
+            background-size: 100%;
+            position: absolute;
+            z-index: 10;
+            width: 96px;
+            height: 96px;
+            top: calc(50% - 48px);
+            left: calc(50% - 48px);
+
+            @include desktop-small {
+                width: 124px;
+                height: 124px;
+                top: calc(50% - 62px);
+                left: calc(50% - 62px);
+            }
+        }
+    }
+}

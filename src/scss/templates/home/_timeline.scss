@@ -1,0 +1,36 @@
+section.timeline {
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+
+    .info {
+        @include desktop-small {
+            grid-column: 4 / span 8;
+        }
+    }
+
+    .events {
+        padding-top: 3rem;
+
+        @include desktop-small {
+            grid-column: 4 / span 8;
+        }
+    }
+
+    .event {
+
+        & + .event {
+            margin-top: 1rem;
+            border-top: 1px solid #eee;
+            padding-top: 1rem;
+        }
+
+        .date {
+            font-weight: bold;
+            color: $orange;
+        }
+    }
+
+
+
+
+}

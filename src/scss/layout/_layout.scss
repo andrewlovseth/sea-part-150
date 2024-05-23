@@ -1,0 +1,41 @@
+body {
+    background: $white;
+
+    &:before {
+        display: block;
+        content: "";
+        height: 0.25rem;
+        width: 100%;
+        background: linear-gradient(to left, $green 0%, $green 50%, $mid-blue 50%, $mid-blue 100%);
+    }
+}
+
+.site {
+    border-color: $dark-blue;
+    border-width: 2rem;
+    background: $white;
+}
+
+.copy {
+    & + .cta {
+        padding-top: 2rem;
+    }
+}
+
+.sub-grid {
+    display: grid;
+    gap: 0 2rem;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include tablet-small {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    @include desktop-small {
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    & > * {
+        grid-column: 1 / -1;
+    }
+}
