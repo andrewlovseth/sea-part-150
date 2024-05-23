@@ -3,6 +3,7 @@
     align-items: start;
     padding-top: $section-padding;
     padding-bottom: $section-padding;
+    border-top: 0.25rem solid $mid-blue;
 
     .site-info {
         align-items: start;
@@ -39,15 +40,23 @@
             @include desktop-small {
                 grid-column: 3 / span 6;
             }
+
+            h1 {
+                color: $light-blue;
+            }
         }
     }
 
     .footer-nav {
-        h5 {
+        h3 {
             text-transform: uppercase;
             font-weight: 700;
             font-size: 0.875rem;
             letter-spacing: 0.1em;
+
+            &::after {
+                background: $green;
+            }
         }
 
         .links {
@@ -56,8 +65,8 @@
 
             .link {
                 a {
-                    font-size: clamp(1rem, 1.2vw, 1.125rem);
-                    line-height: 1.5em;
+                    font-size: 1rem;
+                    line-height: 1.25em;
                 }
             }
         }
@@ -86,6 +95,10 @@
 
         @include tablet {
             justify-content: flex-end;
+        }
+
+        a img {
+            max-width: 3rem;
         }
     }
 }

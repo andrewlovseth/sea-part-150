@@ -1,27 +1,21 @@
 body.page-template-home {
+    &.nav-open {
+        overflow-y: hidden;
 
-	&.nav-open {
-		overflow-y: hidden;
+        .site-header {
+            background: $white;
+        }
 
-		.site-header {
-			background: $white;
-		}
+        .site-nav {
+            min-height: 100vh;
+        }
+    }
 
-		.site-nav {
-			min-height: 100vh;
-		}
-	}
+    @import "home/hero";
 
+    @import "home/overview";
 
-	@import 'home/hero';
+    @import "home/events";
 
-	@import 'home/about';
-
-	@import 'home/the-park';
-
-	@import 'home/timeline';
-
-	@import 'home/process';
-
-	@import 'home/get-involved';
+    @import "home/get-involved";
 }

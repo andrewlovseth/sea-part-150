@@ -1,8 +1,8 @@
 .headline {
-	padding-bottom: 1rem;
+    padding-bottom: 1rem;
 
-    &.orange {
-        color: $orange;
+    &.blue {
+        color: $dark-blue;
     }
 
     &.teal {
@@ -27,8 +27,8 @@
             margin-right: auto;
         }
 
-        &.orange:after {
-            background: $orange;
+        &.blue:after {
+            background: $dark-blue;
         }
 
         &.teal:after {
@@ -36,27 +36,27 @@
         }
     }
 
-	h1 {
-		font-size: clamp(1.75rem, 4vw, 2.25rem);
-		line-height: 1.25em;
-		font-weight: bold;
-	}
-
-	h2 {
-		font-size: clamp(1.5rem, 3vw, 1.75rem);
-		line-height: 1.25em;
-		font-weight: bold;
-	}
-
-	h3 {
-		font-size: clamp(1.25rem, 2vw, 1.5rem);
-		line-height: 1.25em;
+    h1 {
+        font-size: clamp(1.75rem, 4vw, 2.25rem);
+        line-height: 1.25em;
         font-weight: bold;
-	}
+    }
 
-	h4 {
-		font-size: clamp(1.125rem, 1.5vw, 1.25rem);
-		line-height: 1.25em;
+    h2 {
+        font-size: clamp(1.5rem, 3vw, 1.75rem);
+        line-height: 1.25em;
         font-weight: bold;
-	}    
+    }
+
+    h3 {
+        font-size: clamp(1.25rem, 2vw, 1.5rem);
+        line-height: 1.25em;
+        font-weight: bold;
+    }
+
+    h4 {
+        font-size: clamp(1.125rem, 1.5vw, 1.25rem);
+        line-height: 1.25em;
+        font-weight: bold;
+    }
 }

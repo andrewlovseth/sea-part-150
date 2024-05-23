@@ -1,0 +1,23 @@
+.overview {
+    padding: 4rem 0;
+    align-items: start;
+
+    .info {
+        @include desktop-small {
+            grid-column: 2 / span 6;
+        }
+    }
+
+    .photo {
+        margin-top: 3rem;
+
+        @include desktop-small {
+            margin-top: 0;
+            grid-column: 8 / span 6;
+        }
+
+        &-wrapper {
+            @include cover-fill-image;
+        }
+    }
+}

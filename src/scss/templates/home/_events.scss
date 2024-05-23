@@ -1,6 +1,7 @@
-section.timeline {
-    padding-top: $section-padding;
-    padding-bottom: $section-padding;
+.events {
+    padding: 4rem 0;
+    background: $gray-50;
+    border-top: 1px solid $gray-100;
 
     .info {
         @include desktop-small {
@@ -8,7 +9,7 @@ section.timeline {
         }
     }
 
-    .events {
+    .events__list {
         padding-top: 3rem;
 
         @include desktop-small {
@@ -17,20 +18,15 @@ section.timeline {
     }
 
     .event {
-
         & + .event {
-            margin-top: 1rem;
+            margin-top: 2rem;
             border-top: 1px solid #eee;
-            padding-top: 1rem;
+            padding-top: 2rem;
         }
 
         .date {
             font-weight: bold;
-            color: $orange;
+            color: $dark-blue;
         }
     }
-
-
-
-
 }

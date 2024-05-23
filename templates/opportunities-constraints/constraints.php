@@ -33,7 +33,7 @@
                 </div>
 
                 <div class="info">
-                    <div class="headline orange underline">
+                    <div class="headline blue underline">
                         <h4><?php echo get_sub_field('headline'); ?></h4>
                     </div>
 

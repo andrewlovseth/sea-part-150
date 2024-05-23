@@ -1,12 +1,12 @@
 <?php
 
-    $timeline = get_field('timeline');
-    $headline = $timeline['headline'];
-    $copy = $timeline['copy'];
+    $events = get_field('events');
+    $headline = $events['headline'];
+    $copy = $events['copy'];
 
-if(have_rows('timeline')): while(have_rows('timeline')): the_row(); ?>
+if(have_rows('events')): while(have_rows('events')): the_row(); ?>
 
-    <section class="timeline grid">
+    <section class="events grid">
         <div class="info">
             <div class="headline teal underline">
                 <h3><?php echo $headline; ?></h3>
@@ -17,8 +17,8 @@ if(have_rows('timeline')): while(have_rows('timeline')): the_row(); ?>
             </div>
         </div>
 
-        <div class="events">
-            <?php if(have_rows('events')): $count = 1; while(have_rows('events')): the_row(); ?>
+        <div class="events__list">
+            <?php if(have_rows('list')): $count = 1; while(have_rows('list')): the_row(); ?>
 
                 <div class="event event-<?php echo $count; ?>">
                     <div class="date copy p3 sans-serif">
