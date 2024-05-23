@@ -21,3 +21,14 @@ function add_module_to_my_script($tag, $handle, $src) {
     }
     return $tag;
 }
+
+
+function trimWWW($url) {
+    // Check if the URL starts with "www."
+    if (substr($url, 0, 4) === 'www.') {
+        // Remove "www." from the beginning of the URL
+        return substr($url, 4);
+    }
+    // Return the original URL if it doesn't start with "www."
+    return $url;
+}
