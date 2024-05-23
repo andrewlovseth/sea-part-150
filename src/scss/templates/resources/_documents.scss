@@ -1,0 +1,158 @@
+.documents {
+    padding: 4rem 0;
+    background: $white;
+
+    &-header {
+        padding-bottom: 2rem;
+
+        @include tablet {
+            grid-column: 3 / span 6;
+        }
+
+        @include desktop-small {
+            grid-column: 2 / span 12;
+        }
+    }
+
+    &-categories {
+        margin-bottom: 2rem;
+
+        @include tablet {
+            grid-column: 3 / span 6;
+        }
+
+        @include desktop-small {
+            margin-bottom: 0;
+            grid-column: 2 / span 3;
+            min-height: 50vh;
+        }
+
+        .header {
+            padding-bottom: 1rem;
+
+            h3 {
+                font-weight: bold;
+                color: $gray-700;
+                padding-bottom: 1rem;
+                border-bottom: 1px solid $gray-200;
+            }
+        }
+
+        .wrapper {
+            background: $gray-50;
+            border: 1px solid $gray-200;
+            border-radius: 0.25rem;
+            padding: 2rem;
+            height: 100%;
+        }
+
+        li {
+            & + li {
+                padding-top: 1rem;
+            }
+        }
+
+        a {
+            font-size: 0.875rem;
+        }
+    }
+
+    &-list {
+        @include tablet {
+            grid-column: 3 / span 6;
+        }
+
+        @include desktop-small {
+            grid-column: 5 / span 7;
+        }
+    }
+
+    .document {
+        margin-bottom: 1rem;
+
+        svg {
+            margin-right: 0.75rem;
+
+            path {
+                fill: $mid-blue;
+            }
+        }
+
+        a {
+            background: $white;
+            color: $dark-blue;
+            display: flex;
+            align-items: start;
+            font-size: 1rem;
+            flex-wrap: wrap;
+            padding: 1.5rem 2rem;
+            border-radius: 0.25rem;
+            border: 1px solid rgba($dark-blue, 0.2);
+            width: 100%;
+            transition: all 200ms ease;
+
+            &:hover {
+                text-decoration: none;
+
+                .title {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .cat-header {
+            padding-bottom: 0.5rem;
+
+            span {
+                display: inline-block;
+                font-size: 0.75rem;
+                font-weight: bold;
+                letter-spacing: 0.025em;
+                text-transform: uppercase;
+                color: $mid-blue;
+                transition: all 200ms ease;
+
+                & + span {
+                    padding-left: 0.125rem;
+                    &:before {
+                        content: "|";
+                        padding-right: 0.25rem;
+                    }
+                }
+            }
+        }
+
+        .info {
+            flex: 1;
+        }
+
+        .title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        em {
+            font-style: normal;
+        }
+
+        .meta {
+            width: 100%;
+            color: $dark-blue;
+            border-top: 1px solid $gray-200;
+            padding-top: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.75rem;
+
+            span + span {
+                padding-left: 0.5rem;
+            }
+        }
+
+        .description {
+            padding-top: 0.5rem;
+            color: $black;
+        }
+    }
+}

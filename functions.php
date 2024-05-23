@@ -8,6 +8,7 @@ function esa_enqueue_child_styles_and_scripts() {
 
     $dir = get_stylesheet_directory_uri();
     wp_enqueue_style( 'sea-part-150-styles', $dir . '/public/css/main.css', '', false );
+    wp_enqueue_script('isotope-scripts', 'https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js', array(), false, true );
     wp_enqueue_script('sea-part-150-scripts', $dir . '/src/js/main.js', array(), false, true );
 
 }
@@ -31,4 +32,15 @@ function trimWWW($url) {
     }
     // Return the original URL if it doesn't start with "www."
     return $url;
+}
+
+
+function formatBytes($bytes) {
+    if ($bytes > 0) {
+        $i = floor(log($bytes) / log(1024));
+        $sizes = array('B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB');
+        return sprintf('%.02F', round($bytes / pow(1024, $i),1)) * 1 . ' ' . @$sizes[$i];
+    } else {
+        return 0;
+    }
 }

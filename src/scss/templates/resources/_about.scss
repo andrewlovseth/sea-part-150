@@ -1,0 +1,7 @@
+.about {
+    .copy {
+        @include desktop-small {
+            grid-column: 2 / span 8;
+        }
+    }
+}
