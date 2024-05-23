@@ -1,0 +1,27 @@
+.utilities-bar {
+    background: $dark-blue;
+    padding: 0.75rem 0;
+
+    .translate {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .gt_switcher-popup {
+        color: $white;
+
+        span {
+            color: $white !important;
+        }
+    }
+
+    .gt_white_content {
+        width: 250px !important;
+    }
+
+    .gt_languages {
+        a {
+            color: $dark-blue !important;
+        }
+    }
+}

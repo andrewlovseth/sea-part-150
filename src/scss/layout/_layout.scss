@@ -11,8 +11,7 @@ body {
 }
 
 .site {
-    border-color: $dark-blue;
-    border-width: 2rem;
+    border: none;
     background: $white;
 
     &-content {
