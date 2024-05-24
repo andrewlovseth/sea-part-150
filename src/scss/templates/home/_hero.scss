@@ -42,8 +42,7 @@ section.home-hero {
 
         h2 {
             text-transform: uppercase;
-            letter-spacing: 0.1em;
-            font-size: clamp(1.125rem, 1.4vw, 1.25rem);
+            font-size: 3rem;
             text-shadow: 0 2px 2px rgba($black, 0.5);
 
             &:after {
@@ -58,14 +57,9 @@ section.home-hero {
 
         h1 {
             padding-top: 0.5rem;
-            font-size: 3.5rem;
+            font-size: 2rem;
             text-transform: uppercase;
-            font-weight: 900;
             text-shadow: 0 2px 2px rgba($black, 0.5);
-
-            @include desktop-small {
-                font-size: 5rem;
-            }
         }
     }
 }
