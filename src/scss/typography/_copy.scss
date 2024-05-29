@@ -8,6 +8,62 @@
     a {
         color: $dark-blue;
     }
+
+    table {
+        font-family: $open-sans;
+        margin-top: 2rem;
+        border-left: 1px solid $gray-200;
+        width: 100%;
+        table-layout: fixed;
+
+        thead {
+            background: $dark-blue;
+            color: $white;
+        }
+
+        tr {
+            &:nth-child(odd) td {
+                background: $gray-50;
+            }
+        }
+
+        th,
+        td {
+            font-size: 1rem;
+        }
+
+        th {
+            text-align: left;
+            padding: 0.75rem 1.5rem;
+
+            & + th {
+                border-left: 1px solid $dark-blue-950;
+            }
+
+            &:first-child {
+                border-top-left-radius: 0.25rem;
+            }
+
+            &:last-child {
+                border-top-right-radius: 0.25rem;
+            }
+        }
+
+        td {
+            border-right: 1px solid $gray-200;
+            border-bottom: 1px solid $gray-200;
+            padding: 1.5rem;
+
+            ol {
+                font-size: 0.875rem;
+                padding-top: 0.75rem;
+
+                li + li {
+                    padding-top: 0.5rem;
+                }
+            }
+        }
+    }
 }
 
 .p1 {
