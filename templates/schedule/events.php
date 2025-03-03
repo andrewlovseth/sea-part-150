@@ -15,7 +15,7 @@
         <?php endif; ?>
 
         <?php if ($copy): ?>
-            <div class="copy p1">
+            <div class="copy p2">
                 <?php echo $copy; ?>
             </div>
         <?php endif; ?>
