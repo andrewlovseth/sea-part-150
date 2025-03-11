@@ -20,6 +20,7 @@
             </div>
         <?php endif; ?>
 
+        <?php get_template_part('templates/schedule/gallery'); ?>
 
         <?php if(have_rows('list', $schedule)): ?>
 

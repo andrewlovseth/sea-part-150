@@ -1,16 +1,19 @@
 const Content = {
     documents() {
-        var elem = document.querySelector('.documents-list');
+        var elem = document.querySelector(".documents-list");
+
+        if (!elem) return; // Exit if element doesn't exist
+
         var iso = new Isotope(elem, {
             // options
-            itemSelector: '.document',
-            layoutMode: 'vertical',
+            itemSelector: ".document",
+            layoutMode: "vertical",
         });
 
-        const filterLinks = document.querySelectorAll('.js-documents-filter-link');
+        const filterLinks = document.querySelectorAll(".js-documents-filter-link");
 
         filterLinks.forEach((filterLink) => {
-            filterLink.addEventListener('click', (e) => {
+            filterLink.addEventListener("click", (e) => {
                 e.preventDefault();
 
                 var filterValue = filterLink.dataset.cat;

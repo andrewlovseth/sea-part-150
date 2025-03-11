@@ -8,7 +8,11 @@ function esa_enqueue_child_styles_and_scripts() {
 
     $dir = get_stylesheet_directory_uri();
     wp_enqueue_style( 'sea-part-150-styles', $dir . '/public/css/main.css', '', false );
+
+    $fslightbox_version = filemtime(get_stylesheet_directory() . '/src/js/fslightbox.js');
     wp_enqueue_script('isotope-scripts', 'https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js', array(), false, true );
+    wp_enqueue_script( 'fslightbox-js', get_stylesheet_directory_uri() . '/src/js/fslightbox.js', array(), $fslightbox_version, true );
+
     wp_enqueue_script('sea-part-150-scripts', $dir . '/src/js/main.js', array(), false, true );
 
 }
