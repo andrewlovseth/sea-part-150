@@ -48,3 +48,16 @@ function formatBytes($bytes) {
         return 0;
     }
 }
+
+
+/*
+	Allow KML File Uploads
+*/
+
+function allow_kml_uploads($mimes) {
+    // Add KML MIME type to allowed upload types
+    $mimes['kml'] = 'application/vnd.google-earth.kml+xml';
+    return $mimes;
+}
+add_filter('upload_mimes', 'allow_kml_uploads');
+

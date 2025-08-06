@@ -1140,3 +1140,11 @@ body.page-template-contact .contact-info__item p {
 body.page-template-contact .contact-info__item a {
   text-decoration: underline;
 }
+
+.map p {
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
+  line-height: 1.5em;
+}
+.map .ums_map_opts {
+  margin: 2rem 0;
+}
