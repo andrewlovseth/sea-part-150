@@ -1,0 +1,56 @@
+.workshops {
+    padding: 4rem 0;
+    align-items: start;
+    gap: 2rem;
+
+    .info {
+        @include desktop-small {
+            grid-column: 2 / span 8;
+        }
+    }
+}
+
+.events {
+    padding: 2rem;
+    background: $gray-50;
+    border: 1px solid $gray-200;
+    border-radius: 0.25rem;
+
+    @include desktop-small {
+        grid-column: 10 / span 4;
+    }
+
+    &__header {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $gray-200;
+        margin-bottom: 1rem;
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: $dark-blue;
+        }
+    }
+
+    &__list {
+        display: grid;
+        align-items: start;
+        gap: 2rem;
+    }
+
+    &__date {
+        strong,
+        p {
+            font-weight: bold;
+        }
+    }
+
+    &__info {
+        padding-top: 0.5rem;
+        font-style: italic;
+    }
+
+    p {
+        font-family: $open-sans;
+    }
+}

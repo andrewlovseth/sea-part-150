@@ -270,6 +270,11 @@ a {
   line-height: 1.5em;
 }
 
+.p4 {
+  font-size: 0.875rem;
+  line-height: 1.5em;
+}
+
 .caption {
   padding-top: 0.5rem;
 }
@@ -699,6 +704,53 @@ body.page-template-home .overview .photo-wrapper img {
 body.page-template-home .overview .photo .caption p {
   text-align: right;
   color: #525252;
+}
+body.page-template-home .workshops {
+  padding: 4rem 0;
+  align-items: start;
+  gap: 2rem;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-home .workshops .info {
+    grid-column: 2/span 8;
+  }
+}
+body.page-template-home .events {
+  padding: 2rem;
+  background: #fafafa;
+  border: 1px solid #dcdcdc;
+  border-radius: 0.25rem;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-home .events {
+    grid-column: 10/span 4;
+  }
+}
+body.page-template-home .events__header {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #dcdcdc;
+  margin-bottom: 1rem;
+}
+body.page-template-home .events__header h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #005172;
+}
+body.page-template-home .events__list {
+  display: grid;
+  align-items: start;
+  gap: 2rem;
+}
+body.page-template-home .events__date strong,
+body.page-template-home .events__date p {
+  font-weight: bold;
+}
+body.page-template-home .events__info {
+  padding-top: 0.5rem;
+  font-style: italic;
+}
+body.page-template-home .events p {
+  font-family: "Open Sans", sans-serif;
 }
 
 body.page-template-schedule .timeline {

@@ -10,6 +10,8 @@ get_header(); ?>
 
     <?php get_template_part('templates/home/hero'); ?>
 
+    <?php get_template_part('templates/home/workshops'); ?>
+
     <?php get_template_part('templates/home/overview'); ?>
 
     <?php get_template_part('templates/schedule/events'); ?>
