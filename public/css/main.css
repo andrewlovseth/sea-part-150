@@ -715,7 +715,7 @@ body.page-template-home .workshops {
     grid-column: 2/span 8;
   }
 }
-body.page-template-home .events {
+body.page-template-home .workshops .events {
   padding: 2rem;
   background: #f3f9fc;
   border: 2px solid #37a8c0;
@@ -723,34 +723,34 @@ body.page-template-home .events {
   box-shadow: 2px 2px 12px rgba(20, 51, 61, 0.2);
 }
 @media screen and (min-width: 992px) {
-  body.page-template-home .events {
+  body.page-template-home .workshops .events {
     grid-column: 10/span 4;
   }
 }
-body.page-template-home .events__header {
+body.page-template-home .workshops .events__header {
   padding-bottom: 1rem;
   border-bottom: 1px solid #c6e8f1;
   margin-bottom: 1rem;
 }
-body.page-template-home .events__header h3 {
+body.page-template-home .workshops .events__header h3 {
   font-size: 1.25rem;
   font-weight: bold;
   color: #005172;
 }
-body.page-template-home .events__list {
+body.page-template-home .workshops .events__list {
   display: grid;
   align-items: start;
   gap: 2rem;
 }
-body.page-template-home .events__date strong,
-body.page-template-home .events__date p {
+body.page-template-home .workshops .events__date strong,
+body.page-template-home .workshops .events__date p {
   font-weight: bold;
 }
-body.page-template-home .events__info {
+body.page-template-home .workshops .events__info {
   padding-top: 0.5rem;
   font-style: italic;
 }
-body.page-template-home .events p {
+body.page-template-home .workshops .events p {
   font-family: "Open Sans", sans-serif;
 }
 
