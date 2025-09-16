@@ -1,5 +1,5 @@
 .workshops {
-    padding: 4rem 0;
+    padding: 4rem 0 0 0;
     align-items: start;
     gap: 2rem;
 
@@ -12,9 +12,10 @@
 
 .events {
     padding: 2rem;
-    background: $gray-50;
-    border: 1px solid $gray-200;
-    border-radius: 0.25rem;
+    background: $light-blue-50;
+    border: 2px solid $light-blue-500;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 12px rgba($light-blue-950, 0.2);
 
     @include desktop-small {
         grid-column: 10 / span 4;
@@ -22,7 +23,7 @@
 
     &__header {
         padding-bottom: 1rem;
-        border-bottom: 1px solid $gray-200;
+        border-bottom: 1px solid $light-blue-200;
         margin-bottom: 1rem;
 
         h3 {

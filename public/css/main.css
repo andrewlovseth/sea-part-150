@@ -706,7 +706,7 @@ body.page-template-home .overview .photo .caption p {
   color: #525252;
 }
 body.page-template-home .workshops {
-  padding: 4rem 0;
+  padding: 4rem 0 0 0;
   align-items: start;
   gap: 2rem;
 }
@@ -717,9 +717,10 @@ body.page-template-home .workshops {
 }
 body.page-template-home .events {
   padding: 2rem;
-  background: #fafafa;
-  border: 1px solid #dcdcdc;
-  border-radius: 0.25rem;
+  background: #f3f9fc;
+  border: 2px solid #37a8c0;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 12px rgba(20, 51, 61, 0.2);
 }
 @media screen and (min-width: 992px) {
   body.page-template-home .events {
@@ -728,7 +729,7 @@ body.page-template-home .events {
 }
 body.page-template-home .events__header {
   padding-bottom: 1rem;
-  border-bottom: 1px solid #dcdcdc;
+  border-bottom: 1px solid #c6e8f1;
   margin-bottom: 1rem;
 }
 body.page-template-home .events__header h3 {
