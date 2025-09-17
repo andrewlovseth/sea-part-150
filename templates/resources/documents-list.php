@@ -50,10 +50,6 @@
                         <?php if($file_size): ?>             
                             <span class="file-size"><strong>File Size:</strong> <em><?php echo formatBytes($file_size, 2); ?></em></span>
                         <?php endif; ?>
-
-                        <?php if($date): ?>
-                            <span class="date"><strong>Date Modified:</strong> <em><?php echo $date; ?></em></span>
-                        <?php endif; ?>
                     </div>
 
 
