@@ -1078,11 +1078,12 @@ body.page-template-resources .documents-categories a {
 }
 @media screen and (min-width: 992px) {
   body.page-template-resources .documents-list {
-    grid-column: 5/span 7;
+    grid-column: 5/span 9;
   }
 }
 body.page-template-resources .documents .document {
   margin-bottom: 1rem;
+  width: 100%;
 }
 body.page-template-resources .documents .document svg {
   margin-right: 0.75rem;

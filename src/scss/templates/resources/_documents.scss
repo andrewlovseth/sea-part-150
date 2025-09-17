@@ -63,12 +63,13 @@
         }
 
         @include desktop-small {
-            grid-column: 5 / span 7;
+            grid-column: 5 / span 9;
         }
     }
 
     .document {
         margin-bottom: 1rem;
+        width: 100%;
 
         svg {
             margin-right: 0.75rem;
