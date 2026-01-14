@@ -1157,6 +1157,42 @@ body.page-template-resources .documents .document .description {
   color: #000;
 }
 
+body.page-template-comments .info .banner {
+  grid-column: 1/-1;
+  background: #fff7d2;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ffe66d;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-comments .info .banner {
+    grid-column: 2/span 12;
+  }
+}
+body.page-template-comments .info .banner__icon {
+  background: #efd13e;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+body.page-template-comments .info .banner__icon svg {
+  width: 1rem;
+  height: 1rem;
+}
+body.page-template-comments .info .banner__copy {
+  flex: 1;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.4;
+  margin: 0;
+}
 body.page-template-comments .info__details {
   padding-top: 3rem;
 }
