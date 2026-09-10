@@ -1213,6 +1213,7 @@ body.page-template-comments .info__form {
 }
 body.page-template-comments .eci {
   background: #fff;
+  border: 1px solid #dcdcdc;
   border-radius: 0.25rem;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   padding: 2rem;
