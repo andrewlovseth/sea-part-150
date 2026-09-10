@@ -44,4 +44,14 @@
             grid-column: 2 / span 8;
         }
     }
+
+    &__form {
+        grid-column: 1 / -1;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+
+        @include desktop-small {
+            grid-column: 2 / span 12;
+        }
+    }
 }

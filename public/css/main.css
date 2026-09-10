@@ -1201,6 +1201,16 @@ body.page-template-comments .info__details {
     grid-column: 2/span 8;
   }
 }
+body.page-template-comments .info__form {
+  grid-column: 1/-1;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-comments .info__form {
+    grid-column: 2/span 12;
+  }
+}
 body.page-template-comments .eci {
   background: #fff;
   border-radius: 0.25rem;
