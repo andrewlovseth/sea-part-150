@@ -48,5 +48,16 @@
         </div>
     <?php endif; ?>
 
+    <?php
+        // The page's own content, so the comment form shortcode renders here.
+        $page_content = get_post_field('post_content', get_queried_object_id());
+    ?>
+
+    <?php if (trim($page_content)): ?>
+        <div class="info__form">
+            <?php echo apply_filters('the_content', $page_content); ?>
+        </div>
+    <?php endif; ?>
+
 </section>
 
