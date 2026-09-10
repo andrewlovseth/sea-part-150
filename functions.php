@@ -61,3 +61,31 @@ function allow_kml_uploads($mimes) {
 }
 add_filter('upload_mimes', 'allow_kml_uploads');
 
+
+/*
+	Comment Intake
+
+	Declares this site's public comment form for the esa-comment-intake plugin.
+	The field set is Comment Tracker's, field for field, with nothing required.
+*/
+
+add_filter('esa_comment_intake_config', function () {
+    return [
+        'prefix'    => 'SP150',
+        'languages' => ['en','sp','zh','ko','va','so','am'],
+        'strings'   => get_stylesheet_directory() . '/comment-intake/languages',
+        'files'     => ['types' => ['jpg','jpeg','png','pdf','doc','docx'], 'max' => 10, 'max_mb' => 25],
+        'fields'    => [
+            ['key' => 'first_name',   'type' => 'text',     'list' => true],
+            ['key' => 'last_name',    'type' => 'text',     'list' => true],
+            ['key' => 'organization', 'type' => 'text'],
+            ['key' => 'email',        'type' => 'email',    'list' => true],
+            ['key' => 'address',      'type' => 'text'],
+            ['key' => 'city',         'type' => 'text'],
+            ['key' => 'state',        'type' => 'select',   'options' => 'us_states'],
+            ['key' => 'zip',          'type' => 'text'],
+            ['key' => 'comment',      'type' => 'textarea', 'rows' => 10],
+            ['key' => 'files',        'type' => 'file'],
+        ],
+    ];
+});
