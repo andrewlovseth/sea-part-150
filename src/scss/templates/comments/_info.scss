@@ -45,6 +45,21 @@
         }
     }
 
+    &__intro {
+        grid-column: 1 / -1;
+        padding-top: 3rem;
+
+        @include desktop-small {
+            grid-column: 2 / span 8;
+        }
+
+        p + p,
+        p + ul,
+        ul + p {
+            padding-top: 1rem;
+        }
+    }
+
     &__form {
         grid-column: 1 / -1;
         padding-top: 3rem;

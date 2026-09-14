@@ -42,6 +42,26 @@
             "append": ""
         },
         {
+            "key": "field_68c6a1e0b7c41",
+            "label": "Intro Copy",
+            "name": "intro",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Paragraphs shown above the comment form.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
             "key": "field_6966fd8caa5d0",
             "label": "Hide Button",
             "name": "hide_button",
@@ -122,7 +142,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "templates\/comments.php"
+                "value": "templates/comments.php"
             }
         ]
     ],
@@ -149,5 +169,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1768357278
+    "modified": 1789402322
 }

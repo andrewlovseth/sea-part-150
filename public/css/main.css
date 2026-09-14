@@ -1201,6 +1201,20 @@ body.page-template-comments .info__details {
     grid-column: 2/span 8;
   }
 }
+body.page-template-comments .info__intro {
+  grid-column: 1/-1;
+  padding-top: 3rem;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-comments .info__intro {
+    grid-column: 2/span 8;
+  }
+}
+body.page-template-comments .info__intro p + p,
+body.page-template-comments .info__intro p + ul,
+body.page-template-comments .info__intro ul + p {
+  padding-top: 1rem;
+}
 body.page-template-comments .info__form {
   grid-column: 1/-1;
   padding-top: 3rem;

@@ -5,6 +5,7 @@
     $link = $info['link'];
     $banner_message = get_field('banner_message');
     $hide_button = get_field('hide_button');
+    $intro = get_field('intro');
 
 ?>
 
@@ -45,6 +46,12 @@
                 </div>
 
             <?php endif; ?>
+        </div>
+    <?php endif; ?>
+
+    <?php if ($intro): ?>
+        <div class="info__intro copy p1">
+            <?php echo $intro; ?>
         </div>
     <?php endif; ?>
 
