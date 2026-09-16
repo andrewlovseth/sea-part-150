@@ -3,6 +3,7 @@
     $workshops = get_field('workshops');
     $headline = $workshops['headline'];
     $copy = $workshops['copy'];
+    $events_heading = !empty($workshops['events_heading']) ? $workshops['events_heading'] : 'Workshops';
 
     if(have_rows('workshops_list')): 
 
@@ -21,7 +22,7 @@
 
         <div class="events">
             <div class="events__header">
-                <h3>Workshops</h3>
+                <h3><?php echo $events_heading; ?></h3>
             </div>
 
             <div class="events__list">

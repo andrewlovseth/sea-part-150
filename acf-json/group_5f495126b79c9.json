@@ -120,6 +120,27 @@
                     "toolbar": "full",
                     "media_upload": 0,
                     "delay": 0
+                },
+                {
+                    "key": "field_83d8436c9efd4",
+                    "label": "Events Heading",
+                    "name": "events_heading",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Heading shown above the list of events. Defaults to “Workshops” when empty.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Workshops",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
                 }
             ]
         },
@@ -362,7 +383,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "templates\/home.php"
+                "value": "templates/home.php"
             }
         ]
     ],
@@ -388,5 +409,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1757540760
+    "modified": 1789575823
 }
