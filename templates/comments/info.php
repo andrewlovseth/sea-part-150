@@ -55,14 +55,9 @@
         </div>
     <?php endif; ?>
 
-    <?php
-        // The page's own content, so the comment form shortcode renders here.
-        $page_content = get_post_field('post_content', get_queried_object_id());
-    ?>
-
-    <?php if (trim($page_content)): ?>
+    <?php if (shortcode_exists('esa_comment_form')): ?>
         <div class="info__form">
-            <?php echo apply_filters('the_content', $page_content); ?>
+            <?php echo do_shortcode('[esa_comment_form]'); ?>
         </div>
     <?php endif; ?>
 
